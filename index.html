@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankha Adak | Fullstack Developer</title>
+    <meta name="description" content="Sankha Adak - Fullstack Software Developer specializing in Python, Django, Flask, FastAPI, and modern web technologies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SA<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                Hi, I'm <span class="gradient-text">Sankha Adak</span>
+            </h1>
+            <div class="hero-typewriter animate-on-scroll">
+                <span class="typewriter-prefix">I build </span>
+                <span class="typewriter-text" id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-description animate-on-scroll">
+                A passionate Fullstack Software Developer crafting robust, scalable applications 
+                with Python ecosystems and modern web technologies.
+            </p>
+            <div class="hero-cta animate-on-scroll">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Skills Domain</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper animate-on-scroll">
+                    <div class="about-image-container">
+                        <div class="about-avatar">
+                            <img src="image/sankha.jpeg" alt="Sankha Adak" class="avatar-photo">
+                        </div>
+                        <div class="about-image-border"></div>
+                        <div class="floating-badge badge-1">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="floating-badge badge-3">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <h3 class="about-subtitle">
+                        Fullstack Developer who loves building things that live on the internet
+                    </h3>
+                    <p class="about-text">
+                        I'm Sankha Adak, a passionate Fullstack Software Developer with expertise in 
+                        Python-based technologies. I specialize in building scalable web applications 
+                        using <strong>Django, Flask, and FastAPI</strong>, combined with modern frontend 
+                        technologies.
+                    </p>
+                    <p class="about-text">
+                        My approach emphasizes <strong>clean code, high maintainability, and testable design patterns</strong>. 
+                        I believe in thorough code reviews, comprehensive documentation, and following 
+                        best practices in software development. I'm also proficient in <strong>DevOps, 
+                        CI/CD pipelines, and containerization with Docker</strong>.
+                    </p>
+                    <p class="about-text">
+                        Beyond backend development, I work with data science libraries like 
+                        <strong>NumPy, Pandas, and TensorFlow</strong> to build intelligent applications 
+                        that leverage the power of AI and machine learning.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <span><strong>Name:</strong> Sankha Adak</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span><strong>Role:</strong> Fullstack Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <span><strong>Focus:</strong> Python Ecosystem</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span><strong>Status:</strong> Fresher</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="section-close animate-on-scroll">
+                <span class="section-tag">&lt;/about&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+
+            <div class="skills-categories">
+                <!-- Backend -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="category-title">Backend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Python">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Django">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <span class="skill-name">Django</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Flask">
+                            <div class="skill-icon"><i class="fas fa-flask"></i></div>
+                            <span class="skill-name">Flask</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="FastAPI">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <span class="skill-name">FastAPI</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="category-title">Frontend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="HTML5">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="CSS3">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science & AI -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="category-title">Data Science & AI</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="TensorFlow">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="NumPy">
+                            <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                            <span class="skill-name">NumPy</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Pandas">
+                            <div class="skill-icon"><i class="fas fa-table"></i></div>
+                            <span class="skill-name">Pandas</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="category-title">Databases</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="MongoDB">
+                            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="SQL Server">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-name">SQL Server</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="PostgreSQL">
+                            <div class="skill-icon"><i class="fas fa-elephant"></i></div>
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3 class="category-title">DevOps & Tools</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Docker">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="CI/CD">
+                            <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
+                            <span class="skill-name">CI/CD Pipelines</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Git">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practices -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="category-title">Best Practices</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Clean Code">
+                            <div class="skill-icon"><i class="fas fa-broom"></i></div>
+                            <span class="skill-name">Clean Code</span>
+                        </div>
+                        <div class="skill-card" data-skill="Code Review">
+                            <div class="skill-icon"><i class="fas fa-search-plus"></i></div>
+                            <span class="skill-name">Code Review</span>
+                        </div>
+                        <div class="skill-card" data-skill="Documentation">
+                            <div class="skill-icon"><i class="fas fa-file-alt"></i></div>
+                            <span class="skill-name">Documentation</span>
+                        </div>
+                        <div class="skill-card" data-skill="Testing">
+                            <div class="skill-icon"><i class="fas fa-vial"></i></div>
+                            <span class="skill-name">Testable Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-close animate-on-scroll">
+                <span class="section-tag">&lt;/skills&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Some things I've built</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: AQWeather -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-cloud-sun-rain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://aqweather-sankha.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="project-label">Featured Project</span>
+                            <div class="project-folder"><i class="far fa-folder-open"></i></div>
+                        </div>
+                        <h3 class="project-title">AQWeather</h3>
+                        <p class="project-description">
+                            A comprehensive weather application that provides real-time weather data 
+                            and air quality information. Built with modern web technologies and 
+                            deployed on Vercel for seamless user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                        <a href="https://aqweather-sankha.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-cta">
+                            View Live <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Stock Market Forecasting -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-image-placeholder accent-2">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-link-btn" title="Project Details">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="project-label">AI / ML Project</span>
+                            <div class="project-folder"><i class="far fa-folder-open"></i></div>
+                        </div>
+                        <h3 class="project-title">Stock Market Forecasting</h3>
+                        <p class="project-description">
+                            An AI-powered stock market forecasting tool built with TensorFlow. 
+                            Utilizes deep learning models to analyze market trends and predict 
+                            stock price movements with data-driven insights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                        <span class="project-cta project-cta-muted">
+                            AI Powered <i class="fas fa-brain"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-close animate-on-scroll">
+                <span class="section-tag">&lt;/projects&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Have a project in mind? Let's talk!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <h3 class="contact-heading">Let's build something amazing together</h3>
+                    <p class="contact-text">
+                        I'm currently looking for new opportunities and my inbox is always open. 
+                        Whether you have a question, a project idea, or just want to say hi — 
+                        I'll do my best to get back to you!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">Email</span>
+                                <span class="contact-method-value">iamsank0728@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">Location</span>
+                                <span class="contact-method-value">Bengaluru, India</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">Status</span>
+                                <span class="contact-method-value">Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:iamsank0728@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-on-scroll" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required autocomplete="name">
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required autocomplete="email">
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="section-close animate-on-scroll">
+                <span class="section-tag">&lt;/contact&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Sankha Adak<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built by Sankha Adak
+                </p>
+                <p class="footer-copyright">
+                    &copy; <span id="currentYear"></span> All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
